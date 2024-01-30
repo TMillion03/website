@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    background-color: #FFFEF2;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    background-color: gray;
+    outline:auto;
+    outline-color: black
+}
+
+nav a {
+    color: white;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    outline:auto;
+    outline-color: black;
+}
+
+footer a {
+    color: white;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+.toppage {
+    
+    position: relative;
+    background-color: rgb(204, 199, 193);
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: x-large;
+    text-align: center;
+    color: black;
+    height: 300px;
+}
+
+.toppage h1, .toppage h2 {
+    padding-top: 40px;
+}
+
+.bottompage {
+    background-color: #FFFEF2;
+    padding: 10px;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: medium;
+    color: black;
+    text-align: center;
+}
+
+.bottompage a {
+    color: rgb(22, 104, 170);
+    text-decoration: none;
+}
+.bottompage a:hover {
+    color: red;
+}
+
+hr {
+    border-top: 2px dashed black;
+    border-bottom: none; 
+    border-left: none; 
+    border-right: none; 
+    margin: 5px;
+}
+
+.topimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    padding-left: 10px;
+}
+
+.headshot {
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.headshot:hover {
+    box-shadow: 0 17px 32px black;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.salesimg {
+    position: absolute;
+    top: 0;           
+    right: 10px;
+    padding-top: 50px;
+}
+
+.card {
+    background-color: palegoldenrod;
+    flex-direction: column;
+    padding-top: 7px;
+    width: 100%; 
+    margin: 6px auto; 
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px black;
+    min-height: 630px;
+    height: auto;
+    transition: 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px black;
+    transform: scale(1.05) rotate(-1.5deg);
+    z-index: 10;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    padding: 0 20px;
+    height: auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.card:hover {
+    box-shadow: 0 17px 32px black;
+}
+
+.leadership {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 0; 
+    list-style-type: none;
+}
+
+.leadership dt, .leadership dd {
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.skills {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 0; 
+    justify-items: center;
+}
+
+.skills dt, .skills dd {
+    margin: 0;
+    display: block; 
+}
+
+.languages {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 0; 
+    list-style-type: none;
+}
+
+.contactcard {
+    background-color: #f1f6ff;
+    height:360px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.one-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    margin-top: 250px;
+}
+
+.input {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    margin: 3px;
+}
+
+
+textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    margin: 3px;
+    padding: 12px;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.contactfooter {
+    margin-top: 134px;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
